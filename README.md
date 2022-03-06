@@ -1,4 +1,4 @@
-# plots challenge - The Power of Plots
+# The Power of Plots
 
 ## Background
 Comparing the performance of Pymaceutics Inc.'s target drug, Capomulin, with other potential treatments for squamous cell carcinoma (SCC).<br/>
