@@ -57,9 +57,9 @@ Changes in tumor volume in 249 mice with SCC tumors within 45 days after multidr
 Generate two bar plots which are identical and show the total number of timepoints for all mice tested for each drug regimen.<br/>
 The bar charts and the pie charts created with different methods look the same.<br/>
 __Bar Chart:__<br/>
-<img src="https://github.com/Ash-Tao/plots-challenge/blob/main/Pymaceuticals/output/BarChart%20-%20Timepoints%20for%20Drug%20Regimen%20-%20Pandas.png" width="450">  <img src="https://github.com/Ash-Tao/plots-challenge/blob/main/Pymaceuticals/output/BarChart%20-%20Timepoints%20for%20Drug%20Regimen%20-%20Pyplot.png" width="450"><br/>
+<img src="https://github.com/Ash-Tao/plots-challenge/blob/main/Pymaceuticals/output/BarChart%20-%20Timepoints%20for%20Drug%20Regimen%20-%20Pandas.png" width="400">  <img src="https://github.com/Ash-Tao/plots-challenge/blob/main/Pymaceuticals/output/BarChart%20-%20Timepoints%20for%20Drug%20Regimen%20-%20Pyplot.png" width="400"><br/>
 __Pie Chart:__<br/>
-<img src="https://github.com/Ash-Tao/plots-challenge/blob/main/Pymaceuticals/output/PieChart%20-%20Sex%20Distribution%20(across%20the%20full%20timepoints)%20-%20Pandas.png" width="450">  <img src="https://github.com/Ash-Tao/plots-challenge/blob/main/Pymaceuticals/output/PieChart%20-%20Sex%20Distribution%20(across%20the%20full%20timepoints)%20-%20Pyplot.png" width="450"><br/>
+<img src="https://github.com/Ash-Tao/plots-challenge/blob/main/Pymaceuticals/output/PieChart%20-%20Sex%20Distribution%20(across%20the%20full%20timepoints)%20-%20Pandas.png" width="400">  <img src="https://github.com/Ash-Tao/plots-challenge/blob/main/Pymaceuticals/output/PieChart%20-%20Sex%20Distribution%20(across%20the%20full%20timepoints)%20-%20Pyplot.png" width="400"><br/>
 
 __The differences:__<br/>
 - There is difference on the function use for generating the chart.<br/>
