@@ -113,6 +113,6 @@ __The differences:__<br/>
 
 ### 6. Calculate Correlation and Regression
 Calculate the correlation coefficient and linear regression model between mouse weight and average tumor volume for the Capomulin treatment. <br/>
-- Plot the linear regression model on top of the previous scatter plot.<br/>
-  linear regression model is "y = 0.95x + 21.55"<br/>
-  ![alt text](https://github.com/Ash-Tao/plots-challenge/blob/main/Pymaceuticals/output/ScatterPlot%20-%20Mouse%20Weight%20vs%20Average%20Tumor%20Volume%20(With%20Linear%20Regression%20Model).png)
+Plot the linear regression model on top of the previous scatter plot.<br/>
+linear regression model is "y = 0.95x + 21.55"<br/>
+![alt text](https://github.com/Ash-Tao/plots-challenge/blob/main/Pymaceuticals/output/ScatterPlot%20-%20Mouse%20Weight%20vs%20Average%20Tumor%20Volume%20(With%20Linear%20Regression%20Model).png)
