@@ -84,24 +84,35 @@ __The differences:__<br/>
     FinalTumorVolume_df = MaxTimepoint.merge(FinalData_df, how="inner", left_on=["Mouse ID", "Timepoint"], right_on=["Mouse ID", "Timepoint"])
     ```
   - Determine outliers by using the upper and lower bounds, and then print the results.<br/>
-    - Prepare different data for 4 treatment regimens.
+    - Prepare different data for 4 treatment regimens.<br/>
       ``` python
       CapomulinLastPoint_df = FinalTumorVolume_df.loc[(FinalTumorVolume_df["Drug Regimen"]=="Capomulin"),:]
       ```
-    - Use formula to calculate。Results as follows:
-      ![alt text](https://github.com/Ash-Tao/plots-challenge/blob/main/Pymaceuticals/Sample%20for%20outliers_upper%20and%20lower%20bounds.png)
+    - Use formula to calculate。Results as follows:<br/>
+      ![alt text](https://github.com/Ash-Tao/plots-challenge/blob/main/Pymaceuticals/Sample%20for%20outliers_upper%20and%20lower%20bounds.png)<br/>
 - Using Matplotlib, generate a box plot of the final tumor volume for all four treatment regimens. Highlight any potential outliers in the plot by changing their color and style.<br/>
-      ![alt text](https://github.com/Ash-Tao/plots-challenge/blob/main/Pymaceuticals/output/BoxPlot%20-%20Final%20Tumor%20Volume(4%20regimens).png)
+  ![alt text](https://github.com/Ash-Tao/plots-challenge/blob/main/Pymaceuticals/output/BoxPlot%20-%20Final%20Tumor%20Volume(4%20regimens).png)<br/>
 
 
-### Create a Line Plot and a Scatter Plot
+### 5. Create a Line Plot and a Scatter Plot
 
-1. Select a mouse that was treated with Capomulin and generate a line plot of tumor volume vs. time point for that mouse.
+- Select a mouse that was treated with Capomulin and generate a line plot of tumor volume vs. time point for that mouse.<br/>
+  ``` pyhton
+  # Choose the mouse ID l509, and get the DataFrame.
+  forline_df = cap_df.loc[cap_df["Mouse ID"] == "l509",:]
+  ```
+- Generate a scatter plot of tumor volume versus mouse weight for the Capomulin treatment regimen.<br/>
+  ![alt text](https://github.com/Ash-Tao/plots-challenge/blob/main/Pymaceuticals/output/LineChart%20-%20Timepoint%20vs%20Tumor%20Volume%20(A%20Mouse).png)<br/>
 
-2. Generate a scatter plot of tumor volume versus mouse weight for the Capomulin treatment regimen.
-
-### Calculate Correlation and Regression
-
-1. Calculate the correlation coefficient and linear regression model between mouse weight and average tumor volume for the Capomulin treatment. 
-
-2. Plot the linear regression model on top of the previous scatter plot.
+### 6. Calculate Correlation and Regression
+Calculate the correlation coefficient and linear regression model between mouse weight and average tumor volume for the Capomulin treatment. <br/>
+- Determine the DataFrame that generates the chart.<br/>
+  ``` python
+  FinalCapomulin_df = FinalData_df.loc[(FinalData_df["Drug Regimen"]=="Capomulin"),:]
+  CapomulinAverageVolume_df = pd.DataFrame(FinalCapomulin_df.groupby(FinalCapomulin_df["Mouse ID"]).mean())
+  ```
+- Created the scatter plot<br/>
+  ![alt text](https://github.com/Ash-Tao/plots-challenge/blob/main/Pymaceuticals/output/ScatterPlot%20-%20Mouse%20Weight%20vs%20Average%20Tumor%20Volume.png)
+- Plot the linear regression model on top of the previous scatter plot.<br/>
+  linear regression model is "y = 0.95x + 21.55"<br/>
+  ![alt text](https://github.com/Ash-Tao/plots-challenge/blob/main/Pymaceuticals/output/ScatterPlot%20-%20Mouse%20Weight%20vs%20Average%20Tumor%20Volume%20(With%20Linear%20Regression%20Model).png)
