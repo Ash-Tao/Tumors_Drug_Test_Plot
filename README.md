@@ -101,18 +101,18 @@ __The differences:__<br/>
   # Choose the mouse ID l509, and get the DataFrame.
   forline_df = cap_df.loc[cap_df["Mouse ID"] == "l509",:]
   ```
+  ![alt text](https://github.com/Ash-Tao/plots-challenge/blob/main/Pymaceuticals/output/LineChart%20-%20Timepoint%20vs%20Tumor%20Volume(A%20Mouse).png)
 - Generate a scatter plot of tumor volume versus mouse weight for the Capomulin treatment regimen.<br/>
-  ![alt text](https://github.com/Ash-Tao/plots-challenge/blob/main/Pymaceuticals/output/LineChart%20-%20Timepoint%20vs%20Tumor%20Volume%20(A%20Mouse).png)<br/>
+  - Determine the DataFrame that generates the chart.<br/>
+    ``` python
+    FinalCapomulin_df = FinalData_df.loc[(FinalData_df["Drug Regimen"]=="Capomulin"),:]
+    CapomulinAverageVolume_df = pd.DataFrame(FinalCapomulin_df.groupby(FinalCapomulin_df["Mouse ID"]).mean())
+    ```
+  - Created the scatter plot<br/>
+    ![alt text](https://github.com/Ash-Tao/plots-challenge/blob/main/Pymaceuticals/output/ScatterPlot%20-%20Mouse%20Weight%20vs%20Average%20Tumor%20Volume.png)
 
 ### 6. Calculate Correlation and Regression
 Calculate the correlation coefficient and linear regression model between mouse weight and average tumor volume for the Capomulin treatment. <br/>
-- Determine the DataFrame that generates the chart.<br/>
-  ``` python
-  FinalCapomulin_df = FinalData_df.loc[(FinalData_df["Drug Regimen"]=="Capomulin"),:]
-  CapomulinAverageVolume_df = pd.DataFrame(FinalCapomulin_df.groupby(FinalCapomulin_df["Mouse ID"]).mean())
-  ```
-- Created the scatter plot<br/>
-  ![alt text](https://github.com/Ash-Tao/plots-challenge/blob/main/Pymaceuticals/output/ScatterPlot%20-%20Mouse%20Weight%20vs%20Average%20Tumor%20Volume.png)
 - Plot the linear regression model on top of the previous scatter plot.<br/>
   linear regression model is "y = 0.95x + 21.55"<br/>
   ![alt text](https://github.com/Ash-Tao/plots-challenge/blob/main/Pymaceuticals/output/ScatterPlot%20-%20Mouse%20Weight%20vs%20Average%20Tumor%20Volume%20(With%20Linear%20Regression%20Model).png)
