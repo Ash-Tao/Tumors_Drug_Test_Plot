@@ -1,0 +1,14 @@
+Mouse ID,Drug Regimen,Sex,Age_months,Weight (g),Timepoint,Tumor Volume (mm3),Metastatic Sites
+g989,Propriva,Female,21,26,0,45.0,0
+g989,Propriva,Female,21,26,0,45.0,0
+g989,Propriva,Female,21,26,5,48.78680146,0
+g989,Propriva,Female,21,26,5,47.57039208,0
+g989,Propriva,Female,21,26,10,51.74515613,0
+g989,Propriva,Female,21,26,10,49.880527799999996,0
+g989,Propriva,Female,21,26,15,51.32585207,1
+g989,Propriva,Female,21,26,15,53.44201976,0
+g989,Propriva,Female,21,26,20,55.32612202,1
+g989,Propriva,Female,21,26,20,54.65765008,1
+g989,Propriva,Female,21,26,25,56.04556353,1
+g989,Propriva,Female,21,26,30,59.08229394,1
+g989,Propriva,Female,21,26,35,62.57087961,2
