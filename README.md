@@ -1,4 +1,4 @@
-# The Power of Plots
+# Tumors_Drug_Test
 
 ## Background
 Comparing the performance of Pymaceutics Inc.'s target drug, Capomulin, with other potential treatments for squamous cell carcinoma (SCC).<br/>
